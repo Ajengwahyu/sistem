@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Latihan 3</title>
+  <style>
+    .navbar {
+      text-align: center;
+    }
+    .content {
+      margin: 30px 600px;
+    }
+    form div {
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <section class="navbar">
+    <div class="title">
+      <h1>LATIHAN 3</h1>
+    </div>
+    <nav>
+      <a href="./latihan-3-list.html">List Data</a>
+    </nav>
+  </section>
+  <section class="content">
+    <form action="./latihan-3-list.html" method="get">
+      <div>
+        <label for="name">Nama Lengkap :</label>
+        <input id="name" type="text" name="name"/>
+      </div>
+      <div>
+        <label for="email">Email :</label>
+        <input id="email" type="email" name="email" value="@gmail.com"/>
+      </div>
+      <div>
+        <label for="password">Password :</label>
+        <input id="password" type="password" name="password"/>
+      </div>
+      <div>
+        <label for="phone">No Telepon :</label>
+        <input type="number" name="phone" id="phone">
+      </div>
+      <div>
+        <label>Jenis Kelamin :</label>
+        <div>
+          <label for="laki-laki">Laki-laki</label>
+          <input name="radio" id="laki-laki" type="radio" value="Laki-laki">
+        </div>
+        <div>
+          <label for="perempuan">Perempuan</label>
+          <input name="radio" id="perempuan" type="radio" value="Perempuan">
+        </div>
+      </div>
+      <div>
+        <label for="agama">Agama :</label>
+        <select name="agama" id="agama">
+          <option value="islam">Islam</option>
+          <option value="kristen">Kristen</option>
+          <option value="katolik">Katolik</option>
+          <option value="hindu">Hindu</option>
+          <option value="budha">Budha</option>
+        </select>
+      </div>
+      <div>
+        <label for="address">Alamat :</label>
+        <textarea name="address" id="address" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <button type="submit">Simpan</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </section>
+  <section>
+    <div>
+      <a href="./latihan-3.html">Kembali</a>
+    </div>
+  </section>
+</body>
+</html>
